@@ -2,6 +2,9 @@
 Monitoring a PostgreSQL database cluster managed by [Patroni](https://patroni.readthedocs.io/en/latest/#) is crucial to ensure its stability, performance, and reliability.
 This script will keep monitoring the cluster and will send Email throw smtp if notice any strange behavior on the cluster.
 
+# How it's work?
+Basically the script will listen on Patroni API and collects the matrix of the cluster then will analyze it, if found something weird will send email recipients.
+
 ## Prerequset
 1) Python >= 3.6
 2) SMTP server
